@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy $(SolutionDir)..\XTA_W32\Api\ESITap_v9.3.0.1_20160406 $(OutDir)XTA_W32\Api\ESITap_v9.3.0.1_20160406 /I /E /Y&#xD;&#xA;xcopy $(SolutionDir)..\XTA_W32\CSharpCore\XFinApi.ITradeApi.PortCS.dll $(OutDir) /Y" />
+  </Target>
+
+  <ItemGroup>
+    <Reference Include="XFinApi.ITradeApi.DriverCS">
+      <HintPath>..\..\XTA_W32\CSharpCore\XFinApi.ITradeApi.DriverCS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

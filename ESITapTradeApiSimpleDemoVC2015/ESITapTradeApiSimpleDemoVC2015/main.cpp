@@ -120,12 +120,12 @@ static void PrintNotifyInfo(const XFinApi::TradeApi::NotifyParams &param)
 
 static void PrintSubscribedInfo(const XFinApi::TradeApi::QueryParams &instInfo)
 {
-	printf("- OnSubscribed: %s\n", instInfo.InstrumentID.c_str());
+	printf("- OnSubscribed: %s %s %s\n",instInfo.ExchangeID.c_str(), instInfo.ProductID.c_str(), instInfo.InstrumentID.c_str());
 }
 
 static void PrintUnsubscribedInfo(const XFinApi::TradeApi::QueryParams &instInfo)
 {
-	printf("- OnUnsubscribed: %s\n", instInfo.InstrumentID.c_str());
+	printf("- OnUnsubscribed: %s %s %s\n", instInfo.ExchangeID.c_str(), instInfo.ProductID.c_str(), instInfo.InstrumentID.c_str());
 }
 
 static void PrintTickInfo(const XFinApi::TradeApi::Tick &tick)
