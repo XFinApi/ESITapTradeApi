@@ -173,9 +173,9 @@ static void  PrintTradeInfo(const XFinApi::TradeApi::TradeOrder &trade)
 
 static void  PrintInstrumentInfo(const XFinApi::TradeApi::Instrument &inst)
 {
-	printf(" ExchangeID=%s, ProductID=%s, ID=%s\n",
+	printf(" ExchangeID=%s, ProductID=%s, InstrumentID=%s, InstrumentName=%s\n",
 		inst.ExchangeID.c_str(), inst.ProductID.c_str(),
-		inst.InstrumentID.c_str());
+		inst.InstrumentID.c_str(),inst.InstrumentName.c_str());
 }
 
 static void  PrintPositionInfo(const XFinApi::TradeApi::Position &pos)

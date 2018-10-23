@@ -99,9 +99,9 @@ public class Main {
     }
 
     static void PrintInstrumentInfo(XFinApi.TradeApi.Instrument inst) {
-        System.out.println(String.format(" ExchangeID=%s, ProductID=%s, ID=%s",
+        System.out.println(String.format(" ExchangeID=%s, ProductID=%s, InstrumentID=%s, InstrumentName=%s",
                 inst.getExchangeID(), inst.getProductID(),
-                inst.getInstrumentID()));
+                inst.getInstrumentID(), inst.getInstrumentName()));
     }
 
     static void PrintPositionInfo(XFinApi.TradeApi.Position pos) {

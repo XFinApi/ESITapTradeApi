@@ -72,6 +72,10 @@ namespace XFinApi
 			QueryPosition = 15,
 			// 查询账户
 			QueryAccount = 16,
+			// 查询保证金费率
+			QueryInstrumentMarginRate = 17,
+			// 查询手续费费率
+			QueryInstrumentCommissionRate = 18,
 		};
 
 		// 事件结果

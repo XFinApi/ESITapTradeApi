@@ -117,9 +117,9 @@ namespace ESITapTradeApiSimpleDemoCSharp2015_X64
 
         static void PrintInstrumentInfo(Instrument inst)
         {
-            Console.WriteLine(string.Format(" ExchangeID={0}, ProductID={1}, ID={2}",
+            Console.WriteLine(string.Format(" ExchangeID={0}, ProductID={1}, InstrumentID={2}, InstrumentName={3}",
                 inst.ExchangeID, inst.ProductID,
-                inst.InstrumentID));
+                inst.InstrumentID, inst.InstrumentName));
         }
 
         static void PrintPositionInfo(Position pos)
