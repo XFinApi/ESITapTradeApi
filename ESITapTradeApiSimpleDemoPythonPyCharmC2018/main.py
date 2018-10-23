@@ -191,7 +191,7 @@ class TradeEvent(XFinApi_TradeApi.TradeListener):
     def OnQueryInstrument(self,instruments):
         print("- OnQueryInstrument:")
         for inst in instruments:
-            print("ExchangeID={}, ProductID={}, ID={}".format(inst.ExchangeID, inst.ProductID,inst.InstrumentID))
+            print("ExchangeID={}, ProductID={}, InstrumentID={}, InstrumentName={}".format(inst.ExchangeID, inst.ProductID,inst.InstrumentID,inst.InstrumentName))
 
     def OnQueryPosition(self,poss):
         print("- OnQueryPosition")

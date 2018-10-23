@@ -10,7 +10,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../XTA_W32/Java/XFinApi.ITradeApi.DriverJava.jar!/" />
+          <root url="jar://$MODULE_DIR$/../XTA_W32/Java/XFinApi.ITradeApi.DriverJava.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

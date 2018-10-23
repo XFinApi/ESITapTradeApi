@@ -3,7 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/ESITapTradeApiSimpleDemoJavaIdeaIC2018_jar</output-path>
     <root id="archive" name="ESITapTradeApiSimpleDemoJavaIdeaIC2018.jar">
       <element id="module-output" name="ESITapTradeApiSimpleDemoJavaIdeaIC2018" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../XTA_W32/Java/XFinApi.ITradeApi.DriverJava.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../XTA_W32/Java/XFinApi.ITradeApi.DriverJava.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

@@ -71,7 +71,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="XFinApi.ITradeApi.DriverCS">
-      <HintPath>..\..\XTA_W32\CSharp\XFinApi.ITradeApi.DriverCS.dll</HintPath>
+      <HintPath>..\XTA_W32\CSharp\XFinApi.ITradeApi.DriverCS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
