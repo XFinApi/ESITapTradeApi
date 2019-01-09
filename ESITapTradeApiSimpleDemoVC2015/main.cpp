@@ -85,7 +85,7 @@ public:
 
 		ExchangeID = "COMEX";
 		ProductID = "GC";
-		InstrumentID = "1812";
+		InstrumentID = "1912";
 	}
 };
 
@@ -189,10 +189,10 @@ static void  PrintPositionInfo(const XFinApi::TradeApi::Position &pos)
 
 static void  PrintAccountInfo(const XFinApi::TradeApi::Account &acc)
 {
-	printf("  Balance=%g, Available=%g, CanDraw=%g, Equity=%g, FrozenCommission=%g, FrozenMargin=%g, Commission=%g, AccountIntialMargin=%g, PositionProfit=%g, MarketEquity=%g\n",
-		DEFAULT_FILTER(acc.Balance), DEFAULT_FILTER(acc.Available), DEFAULT_FILTER(acc.CanDraw), DEFAULT_FILTER(acc.Equity),
-		DEFAULT_FILTER(acc.FrozenCommission), DEFAULT_FILTER(acc.FrozenMargin), DEFAULT_FILTER(acc.Commission), DEFAULT_FILTER(acc.AccountIntialMargin),
-		DEFAULT_FILTER(acc.PositionProfit), DEFAULT_FILTER(acc.MarketEquity));
+	printf("  Balance=%g, Available=%g, FrozenCommission=%g, FrozenMargin=%g, Commission=%g, MaintenanceMargin=%g, PositionProfit=%g\n",
+		DEFAULT_FILTER(acc.Balance), DEFAULT_FILTER(acc.Available),
+		DEFAULT_FILTER(acc.FrozenCommission), DEFAULT_FILTER(acc.FrozenMargin), DEFAULT_FILTER(acc.Commission), DEFAULT_FILTER(acc.MaintenanceMargin),
+		DEFAULT_FILTER(acc.PositionProfit));
 }
 
 static bool TimeIsSmaller(const std::string &lhs, const std::string &rhs)

@@ -209,10 +209,10 @@ class TradeEvent(XFinApi_TradeApi.TradeListener):
 
     def OnQueryAccount(self,accInfo):
         print("- OnQueryAccount")
-        print(" Balance={}, Available={}, CanDraw={}, Equity={}, FrozenCommission={}, FrozenMargin={}, Commission={}, AccountIntialMargin={}, PositionProfit={}, MarketEquity={}".format(
-            accInfo.Balance, accInfo.Available, accInfo.CanDraw, accInfo.Equity,
-            accInfo.FrozenCommission, accInfo.FrozenMargin, accInfo.Commission, accInfo.AccountIntialMargin,
-            accInfo.PositionProfit, accInfo.MarketEquity))
+        print(" Balance={}, Available={}, FrozenCommission={}, FrozenMargin={}, Commission={}, MaintenanceMargin={}, PositionProfit={}".format(
+            accInfo.Balance, accInfo.Available,
+            accInfo.FrozenCommission, accInfo.FrozenMargin, accInfo.Commission, accInfo.MaintenanceMargin,
+            accInfo.PositionProfit))
 
 
 class TradeTest:

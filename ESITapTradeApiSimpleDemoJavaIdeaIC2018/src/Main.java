@@ -114,10 +114,10 @@ public class Main {
     }
 
     static void PrintAccountInfo(XFinApi.TradeApi.Account acc) {
-        System.out.println(String.format("  Balance=%g, Available=%g, CanDraw=%g, Equity=%g, FrozenCommission=%g, FrozenMargin=%g, Commission=%g, AccountIntialMargin=%g, PositionProfit=%g, MarketEquity=%g",
-                acc.getBalance(), acc.getAvailable(), acc.getCanDraw(), acc.getEquity(), 
+        System.out.println(String.format("  Balance=%g, Available=%g, FrozenCommission=%g, FrozenMargin=%g, Commission=%g, MaintenanceMargin=%g, PositionProfit=%g",
+                acc.getBalance(), acc.getAvailable(), 
 				acc.getFrozenCommission(), acc.getFrozenMargin(), acc.getCommission(),
-                acc.getAccountIntialMargin(), acc.getPositionProfit(), acc.getMarketEquity()));
+                acc.getMaintenanceMargin(), acc.getPositionProfit()));
     }
 
     //////////////////////////////////////////////////////////////////////////////////

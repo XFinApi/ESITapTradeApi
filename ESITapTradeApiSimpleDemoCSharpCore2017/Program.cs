@@ -135,10 +135,10 @@ namespace ESITapTradeApiSimpleDemoCSharpCore2017
 
         static void PrintAccountInfo(Account acc)
         {
-            Console.WriteLine(string.Format("   Balance={0:g}, Available={1:g}, CanDraw={2:g}, Equity={3:g}, FrozenCommission={4:g}, FrozenMargin={5:g}, Commission={6:g}, AccountIntialMargin={7:g}, PositionProfit={8:g}, MarketEquity={9:g}\n",
-                acc.Balance, acc.Available, acc.CanDraw, acc.Equity,
-                acc.FrozenCommission, acc.FrozenMargin, acc.Commission, acc.AccountIntialMargin,
-                acc.PositionProfit, acc.MarketEquity));
+            Console.WriteLine(string.Format("   Balance={0:g}, Available={1:g}, FrozenCommission={2:g}, FrozenMargin={3:g}, Commission={4:g}, MaintenanceMargin={5:g}, PositionProfit={6:g}\n",
+                acc.Balance, acc.Available,
+                acc.FrozenCommission, acc.FrozenMargin, acc.Commission, acc.MaintenanceMargin,
+                acc.PositionProfit));
         }
 
         //////////////////////////////////////////////////////////////////////////////////
