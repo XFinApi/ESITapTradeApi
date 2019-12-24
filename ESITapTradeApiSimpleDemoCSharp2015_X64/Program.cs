@@ -29,7 +29,7 @@ namespace ESITapTradeApiSimpleDemoCSharp2015_X64
             //合约
             public string ExchangeID = "COMEX";
             public string ProductID = "GC";
-            public string InstrumentID = "1812";
+            public string InstrumentID = "2012";
 
             //行情
             public double SellPrice1 = -1;
@@ -441,6 +441,7 @@ namespace ESITapTradeApiSimpleDemoCSharp2015_X64
             Console.WriteLine("Press any key to OrderAction.");
             Console.ReadKey();
             Order order = new Order();
+			order.InvestorID = Cfg.TradeUserName;
             order.ExchangeID = Cfg.ExchangeID;
             order.ProductID = Cfg.ProductID;
             order.InstrumentID = Cfg.InstrumentID;

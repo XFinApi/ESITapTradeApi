@@ -24,7 +24,7 @@ public class Main {
 		//合约
 		public String ExchangeID = "COMEX";
 		public String ProductID = "GC";
-		public String InstrumentID = "1812";
+		public String InstrumentID = "2012";
 
 		//行情
 		public double SellPrice1 = -1;
@@ -411,6 +411,7 @@ public class Main {
             System.out.println("Press any key to OrderAction.");
             scanner.nextLine();
             XFinApi.TradeApi.Order order = new XFinApi.TradeApi.Order();
+			order.setInvestorID(Cfg.TradeUserName);
 			order.setExchangeID(Cfg.ExchangeID);
 			order.setProductID(Cfg.ProductID);
             order.setInstrumentID(Cfg.InstrumentID);

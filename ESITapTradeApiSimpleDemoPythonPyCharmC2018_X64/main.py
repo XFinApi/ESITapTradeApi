@@ -25,7 +25,7 @@ class Config:
     #合约
     ExchangeID = "COMEX"
     ProductID = "GC"
-    InstrumentID = "1812"
+    InstrumentID = "2012"
 
     # 行情
     AskPrice1 = -1
@@ -294,6 +294,7 @@ class TradeTest:
         print("Press any key to OrderAction.");
         input()
         order = XFinApi_TradeApi.Order()
+		order.InvestorID = self.cfg.TradeUserName
         order.ExchangeID = self.cfg.ExchangeID
         order.ProductID = self.cfg.ProductID
         order.InstrumentID = self.cfg.InstrumentID

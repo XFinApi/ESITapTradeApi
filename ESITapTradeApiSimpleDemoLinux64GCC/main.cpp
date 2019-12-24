@@ -47,7 +47,7 @@ public:
 
 		ExchangeID = "COMEX";
 		ProductID = "GC";
-		InstrumentID = "1812";
+		InstrumentID = "2012";
 	}
 };
 
@@ -442,6 +442,7 @@ void TradeTest()
 	std::cout << "Press any key to OrderAction.\n";
 	getchar();
 	XFinApi::TradeApi::Order order;
+	order.InvestorID = Cfg.TradeUserName;
 	order.ExchangeID = Cfg.ExchangeID;
 	order.ProductID = Cfg.ProductID;
 	order.InstrumentID = Cfg.InstrumentID;
